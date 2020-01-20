@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Dice</string>
+    <string name="kosc1">kosc1</string>
+    <string name="k2">kosc2</string>
+    <string name="k3">kosc3</string>
+    <string name="k4">kosc4</string>
+    <string name="k5">kosc5</string>
+    <string name="wykonaj_rzut">Wykonaj rzut</string>
 </resources>

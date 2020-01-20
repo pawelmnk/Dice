@@ -4,16 +4,75 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/forest"
     tools:context=".MainActivity">
 
     <ImageView
-        android:layout_width="300dp"
-        android:layout_height="300dp"
+        android:contentDescription="@string/kosc1"
+        android:id="@+id/dice1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:src="@drawable/dice1"
-        android:id="@+id/image_view_dice"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.403" />
+
+    <ImageView
+        android:contentDescription="@string/k2"
+        android:id="@+id/dice2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/dice2"
+        app:layout_constraintBottom_toTopOf="@+id/dice1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:contentDescription="@string/k3"
+        android:id="@+id/dice3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/dice3"
+        app:layout_constraintBottom_toTopOf="@+id/dice1"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:contentDescription="@string/k4"
+        android:id="@+id/dice4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/dice4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dice1" />
+
+    <ImageView
+        android:contentDescription="@string/k5"
+        android:id="@+id/dice5"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="52dp"
+        android:src="@drawable/dice5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dice1" />
+
+    <Button
+        android:id="@+id/toggle_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="216dp"
+        android:text="@string/wykonaj_rzut"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dice1" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
